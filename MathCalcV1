@@ -1,0 +1,158 @@
+# Math Calculaor
+# All rights reserved to Stonebrucken
+# Github 'Python Tasks' Repository
+
+import math
+
+
+def AreaPerimeter():
+
+    print("Perimeter & Area")
+
+    n1 = int(input("Enter your first number"))
+    n2 = int(input("Enter your second number"))
+
+    p1 = input("Perimeter or Area?")
+
+    if p1 == "Perimeter":
+       n11 = n1 + n2
+       print(n11)
+       
+
+    elif p1 == "Area":
+       n12 = n1 * n2
+       print(n12)
+       
+
+    else:
+       print("Invalid input")
+
+
+def CircleArea():
+
+    print("Area of Circle Calculator")
+   
+    radius = float(input("Enter the radius of Circle"))
+
+    cir1 = input("Work out the area for Circle or Semi-Circle?")
+
+    if cir1 == "Circle":
+       
+        radius2 = math.pi * radius * radius
+        print(radius2)
+
+    elif cir1 == "Semi-Circle":
+        radius21 = math.pi * radius * radius / 2
+        print(radius21)
+
+def Differentiation():
+
+    print("Differential Calculator")
+
+    co1 = int(input("Enter the coefficient respective of x"))
+    co2 = int(input("Enter your power assigned to x"))
+
+    co3 = co1 * co2
+    print(co3, "Is your coefficient")
+
+    co4 = co2 - 1
+
+    print(co3, "x", co4)
+
+def Integration():
+
+    print("Integral Calcuator")
+
+    inte1 = int(input("Enter your coefficient respective of x"))
+    inte2 = int(input("Enter your power assigned to x"))
+
+    inte3 = inte2 + 1
+    inte4 = inte1 / inte3
+
+    print(inte4, "Is your coefficient")
+
+    print(inte4, "x", inte3)
+ 
+def Logarithims():
+
+    print("Basic Logarithim Calculator")
+
+    loge1 = int(input("Enter any number"))
+    loge2 = int(input("Enter a base"))
+ 
+
+    loge2 = loge1 * (math.log(loge1,loge2))
+    print(loge2, "is your answer")
+
+def NaturalLogarithims():
+
+    print("Natural Log Calculator")
+
+    loge11 = int(input("Enter any number"))
+    loge12 = int(input("Enter any base"))
+
+    loge13 = loge11 * math.e * loge12
+
+    print(loge13, "Is your Natural Log")
+
+def sinfunc():
+
+    input1 = int(input("Enter your angle"))
+    input2 = int(input("Enter your opposite sum"))
+   
+    calctrig = input2 / (math.sin(input1));
+    print(calctrig)
+
+def cosfunc():
+
+    input3 = int(input("Enter your angle"))
+    input4 = int(input("Enter your adajcent sum"))
+
+    calctrig2 = input4 / (math.cos(input3));
+    print(calctrig2)
+
+def tanfunc():
+
+    input5 = int(input("Enter your angle"))
+    input6 = int(input("Enter your opposite sum"))
+
+    calctrig3 = input6 / (math.tan(input5));
+    print(calctrig3)
+
+def Trigonometry():
+
+    print("Trig Calculator")
+
+    trio2 = input("Calculate sin, cos or tan?")
+
+    if trio2 == "sin":
+        sinfunc()
+    elif trio2 == "cos":
+        cosfunc()
+    elif trio2 == "tan":
+        tanfunc()
+ 
+def intro(): # Initiating def func
+
+    print("Welcome to the Math Python Calculator 1.0")
+
+    aste1 = input("Work out AreaPerimeter, CircleArea, Differentiation, Integration, Logarithims, NaturalLogarithims or Trigonometry")
+
+    if aste1 == "AreaPerimeter":
+        AreaPerimeter()
+    elif aste1 == "CircleArea":
+        CircleArea()
+    elif aste1 == "Differentiation":
+        Differentiation()
+    elif aste1 == "Integration":
+        Integration()
+    elif aste1 == "Logarithims":
+        Logarithims()
+    elif aste1 == "NaturalLogarithims":
+        NaturalLogarithims()
+    elif aste1 == "Trigonometry":
+        Trigonometry()
+    else:
+        print("Invalid Choice")
+
+intro()
